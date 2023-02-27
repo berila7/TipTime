@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
     fun emptyInput() {
         val stringInTextField = binding.costOfService.text.toString()
         if (stringInTextField.isEmpty()) {
+            binding.tipResult.text = ""
             Snackbar.make(
                 binding.root,
                 "The field is empty",
